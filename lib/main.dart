@@ -8,12 +8,12 @@ class Index extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Instagram',
+      title: 'Fishing_app',
       theme: new ThemeData(
         primaryColor: Colors.black,
         primaryIconTheme:IconThemeData(color: Colors.black),
         primaryTextTheme: TextTheme(title: TextStyle(color: Colors.black,
-            fontFamily: "Aveny")),
+            fontFamily: "Roboto")),
         textTheme: TextTheme(title: TextStyle(color: Colors.black)),
       ),
       home: IndexHome(),
