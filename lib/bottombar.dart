@@ -1,6 +1,6 @@
 import 'package:fishing_app/activities.dart';
 import 'package:fishing_app/add.dart';
-import 'package:fishing_app/home.dart';
+import 'package:fishing_app/index.dart';
 import 'package:fishing_app/profile.dart';
 import 'package:flutter/material.dart';
 import 'package:fishing_app/map.dart';
@@ -9,7 +9,7 @@ class BottomBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BottomAppBar(
-      child: new Row(
+      child: Row(
         mainAxisSize: MainAxisSize.max,
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
@@ -18,7 +18,7 @@ class BottomBar extends StatelessWidget {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => Home()),
+                MaterialPageRoute(builder: (context) => IndexHome()),
               );
             },
           ),

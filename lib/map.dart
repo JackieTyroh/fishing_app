@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'src/locations.dart' as locations;
+import 'package:fishing_app/bottombar.dart';
 
 class Map extends StatefulWidget {
   @override
@@ -21,6 +22,7 @@ class _MapState extends State<Map> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        bottomNavigationBar: BottomBar(),
         appBar: AppBar(
           title: Text('Fishing Sites'),
           backgroundColor: Colors.green[700],

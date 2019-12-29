@@ -9,7 +9,7 @@ class Index extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Fishing_app',
-      theme: new ThemeData(
+      theme: ThemeData(
         primaryColor: Colors.black,
         primaryIconTheme: IconThemeData(color: Colors.black),
         primaryTextTheme: TextTheme(

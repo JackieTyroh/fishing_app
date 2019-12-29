@@ -5,10 +5,10 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var deviceSize = MediaQuery.of(context).size;
-    return new ListView.builder(
+    return ListView.builder(
       itemCount: 5,
       itemBuilder: (context, index) => index == 0
-          ? new SizedBox(
+          ? SizedBox(
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: <Widget>[
@@ -48,25 +48,25 @@ class Home extends StatelessWidget {
                     children: <Widget>[
                       Row(
                         children: <Widget>[
-                          new Container(
+                          Container(
                             height: 40,
                             width: 40,
-                            decoration: new BoxDecoration(
+                            decoration: BoxDecoration(
                               shape: BoxShape.circle,
-                              image: new DecorationImage(
+                              image: DecorationImage(
                                   image: AssetImage('assets/pic3.jpeg')),
                             ),
                           ),
-                          new SizedBox(
+                          SizedBox(
                             width: 10,
                           ),
-                          new Text(
+                          Text(
                             'Aviel_19',
                             style: TextStyle(fontWeight: FontWeight.bold),
                           ),
                         ],
                       ),
-                      new IconButton(
+                      IconButton(
                           icon: Icon(Icons.more_vert), onPressed: () {}),
                     ],
                   ),
@@ -83,27 +83,27 @@ class Home extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
-                      new Row(
+                      Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: <Widget>[
-                          new IconButton(
+                          IconButton(
                               icon: Icon(
                                 FontAwesomeIcons.thumbsUp,
                               ),
                               onPressed: () {}),
-                          new IconButton(
+                          IconButton(
                               icon: Icon(
                                 FontAwesomeIcons.solidCommentDots,
                               ),
                               onPressed: () {}),
-                          new IconButton(
+                          IconButton(
                               icon: Icon(
                                 FontAwesomeIcons.shareAlt,
                               ),
                               onPressed: () {}),
                         ],
                       ),
-                      new IconButton(
+                      IconButton(
                           icon: Icon(
                             FontAwesomeIcons.infoCircle,
                           ),
@@ -123,22 +123,22 @@ class Home extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: <Widget>[
-                      new Container(
+                      Container(
                         height: 40,
                         width: 40,
-                        decoration: new BoxDecoration(
+                        decoration: BoxDecoration(
                           shape: BoxShape.circle,
-                          image: new DecorationImage(
+                          image: DecorationImage(
                               fit: BoxFit.fill,
                               image: AssetImage('assets/pic1.jpeg')),
                         ),
                       ),
-                      new SizedBox(
+                      SizedBox(
                         width: 10.0,
                       ),
                       Expanded(
-                          child: new TextField(
-                        decoration: new InputDecoration(
+                          child: TextField(
+                        decoration: InputDecoration(
                           border: InputBorder.none,
                           hintText: "Add a comment ...",
                         ),
