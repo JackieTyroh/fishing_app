@@ -11,9 +11,9 @@ class Index extends StatelessWidget {
       title: 'Fishing_app',
       theme: new ThemeData(
         primaryColor: Colors.black,
-        primaryIconTheme:IconThemeData(color: Colors.black),
-        primaryTextTheme: TextTheme(title: TextStyle(color: Colors.black,
-            fontFamily: "Roboto")),
+        primaryIconTheme: IconThemeData(color: Colors.black),
+        primaryTextTheme: TextTheme(
+            title: TextStyle(color: Colors.black, fontFamily: "Roboto")),
         textTheme: TextTheme(title: TextStyle(color: Colors.black)),
       ),
       home: IndexHome(),

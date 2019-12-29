@@ -1,34 +1,96 @@
+import 'package:fishing_app/activities.dart';
+import 'package:fishing_app/add.dart';
+import 'package:fishing_app/home.dart';
+import 'package:fishing_app/profile.dart';
 import 'package:flutter/material.dart';
+import 'package:fishing_app/map.dart';
 
 class BottomBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return 
-      BottomNavigationBar(
-        type: BottomNavigationBarType.fixed,
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
+    return BottomAppBar(
+      child: new Row(
+        mainAxisSize: MainAxisSize.max,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: <Widget>[
+          IconButton(
             icon: Icon(Icons.home),
-            title: Text('Home')
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Home()),
+              );
+            },
           ),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.local_activity),
-              title: Text('Activities')
+          IconButton(
+            icon: Icon(Icons.local_activity),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Activity()),
+              );
+            },
           ),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.add_box,),
-              title: Text('Add')
+          IconButton(
+            icon: Icon(Icons.add_box),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Add()),
+              );
+            },
           ),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.map),
-              title: Text('Map')
+          IconButton(
+            icon: Icon(Icons.map),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Map()),
+              );
+            },
           ),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.account_circle),
-              title: Text('Profile')
+          IconButton(
+            icon: Icon(Icons.account_circle),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Profile()),
+              );
+            },
           ),
         ],
-
-      );
+      ),
+    );
   }
 }
+// For BottomNationBar
+// BottomNavigationBar(
+//   selectedItemColor: Colors.blue,
+//   unselectedItemColor: Colors.black,
+//   type: BottomNavigationBarType.fixed,
+//           items: const <BottomNavigationBarItem>[
+//             BottomNavigationBarItem(
+//               icon: Icon(Icons.home),
+//               title: Text('Home')
+//             ),
+//             BottomNavigationBarItem(
+//                 icon: Icon(Icons.local_activity),
+//                 title: Text('Activities')
+//             ),
+//             BottomNavigationBarItem(
+//                 icon: Icon(Icons.add_box,),
+//                 title: Text('Add')
+//             ),
+//             BottomNavigationBarItem(
+
+//                 icon: Icon(Icons.map),
+//                 title: Text('Map')
+//             ),
+//             BottomNavigationBarItem(
+//                 icon: Icon(Icons.account_circle),
+//                 title: Text('Profile')
+//             ),
+//           ],
+
+//         );
+//

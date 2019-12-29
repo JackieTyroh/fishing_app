@@ -7,21 +7,19 @@ class IndexHome extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: new MaterialApp(
-        debugShowCheckedModeBanner: false,
-        home: new Scaffold(
-          appBar: AppBar(
-            centerTitle: true,
-            title: Text('MFIS'),
-            actions: <Widget>[
-              IconButton(icon:Icon(Icons.search),onPressed: (){}),
-              IconButton(icon:Icon(Icons.more_vert),onPressed: (){}),
-            ],
-          ),
-          bottomNavigationBar: BottomBar(),
-          body:Home(),
-        )
-        ),
-
+          debugShowCheckedModeBanner: false,
+          home: new Scaffold(
+            appBar: AppBar(
+              centerTitle: true,
+              title: Text('MFIS'),
+              actions: <Widget>[
+                IconButton(icon: Icon(Icons.search), onPressed: () {}),
+                IconButton(icon: Icon(Icons.menu), onPressed: () {}),
+              ],
+            ),
+            bottomNavigationBar: BottomBar(),
+            body: Home(),
+          )),
     );
   }
 }
