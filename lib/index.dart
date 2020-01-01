@@ -6,9 +6,9 @@ class IndexHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: new MaterialApp(
+      body: MaterialApp(
           debugShowCheckedModeBanner: false,
-          home: new Scaffold(
+          home: Scaffold(
             appBar: AppBar(
               centerTitle: true,
               title: Text('MFIS'),
