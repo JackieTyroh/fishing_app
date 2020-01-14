@@ -4,6 +4,7 @@ import 'package:fishing_app/index.dart';
 import 'package:fishing_app/profile.dart';
 import 'package:flutter/material.dart';
 import 'package:fishing_app/map.dart';
+import 'login.dart';
 
 class BottomBar extends StatelessWidget {
   @override

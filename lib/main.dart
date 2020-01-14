@@ -1,5 +1,5 @@
+import 'package:fishing_app/login.dart';
 import 'package:flutter/material.dart';
-import 'index.dart';
 
 void main() => runApp(Index());
 
@@ -16,7 +16,7 @@ class Index extends StatelessWidget {
             title: TextStyle(color: Colors.black, fontFamily: "Roboto")),
         textTheme: TextTheme(title: TextStyle(color: Colors.black)),
       ),
-      home: IndexHome(),
+      home: Login(),
     );
   }
 }
